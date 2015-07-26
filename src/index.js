@@ -39,4 +39,13 @@ function onChange(v){
   console.log(v);
 }
 
-React.render(<div style={{width:400,margin:100}}><Slider onChange={onChange}/></div>, document.getElementById('container'));
+React.render(
+  <div style={{width:400,margin:100}}>
+    <Slider 
+      onChange={onChange}
+      min={1995}
+      max={2015}
+      defaultValue={2008}
+    />
+  </div>,
+  document.getElementById('container'));
