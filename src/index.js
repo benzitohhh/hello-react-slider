@@ -1,7 +1,7 @@
 // How to load css via browserify?
 
 // By default, this will fail.
-// Node only knows how to require .js/.json/.node files.
+// Node only knows how to require .js / .json / .node files.
 //var css = require('./index.css');
 
 // One workaround is to load it as a file, using fs.
@@ -29,6 +29,7 @@
 // 2. Global transform
 //    i.e. tell browserify to apply the browserify-css transform globally (across all modules)
 //    browserify -g browserify-css src/index.js
+//    note that this option must be specified by the commandline (it is not possible to add it in the package.json)
 var css = require('rc-slider/assets/index.css');
 
 var React = require('react');
