@@ -1,7 +1,6 @@
 var React = require('react');
 var ReactSlider = require('react-slider'); // see https://github.com/mpowaga/react-slider
 
-// Wrap the slider, so that we can render the handles (and values) however we want...
 var RangeSlider = React.createClass({
   getInitialState: function () {
     return {value: this.props.defaultValue};
