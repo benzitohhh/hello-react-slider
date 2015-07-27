@@ -4,8 +4,9 @@
   "description": "",
   "scripts": {
     "test":  "echo \"Error: no test specified\" && exit 1",
-    "dev":   "node node_modules/watchify/bin/cmd.js   src/index.js -o public/build/index.js --debug --verbose",
-    "build": "node node_modules/browserify/bin/cmd.js src/index.js -o public/build/index.js --debug --verbose"
+    "dev":   "watchify   src/index.js -o public/build/index.js --debug --verbose",
+    "build": "browserify src/index.js -o public/build/index.js --debug --verbose",
+    "start": "npm run dev"
   },
   "browserify": {
     "transform": [
